@@ -51,7 +51,7 @@ export default function Navbar() {
           transition={{type:'spring' , duration:1 , delay:0.3 , ease:'ease-in-out'}}>
             <ul> 
               <motion.li variants={variants} whileHover='hover'><a href="/" className={styles.brand}>Movies</a></motion.li>
-              <motion.li variants={variants} whileHover='hover'><a href="/tv-shows" className={styles.brand}>TV Shows</a></motion.li>
+              <motion.li variants={variants} whileHover='hover'><a href="/tv_shows" className={styles.brand}>TV Shows</a></motion.li>
               <motion.li variants={variants} whileHover='hover'><a href="/actors" className={styles.brand}>Actors</a></motion.li>
               <li className={styles.search}>
               <motion.input type="text" placeholder='Search' id="text" whileHover={{scale:1.06 , marginRight:"2px"}} whileFocus={{scale:1.06 , marginRight:"2px"}} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { easeInOut, motion } from 'framer-motion'
-import styles from '../../styles/SelectedMovie.module.css'
+import styles from '../../styles/SelectedTvShow.module.css'
 import Image from 'next/image'
 export default function SelectedTvShow({tvShow}) {
   return (
