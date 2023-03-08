@@ -1,10 +1,13 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion'
 import styles from '../../styles/SelectedMovie.module.css'
 import Image from 'next/image'
 export default function SelectedTvShow({tvShow}) {
   return (
-    <div className={styles.container}>
+    <motion.div className={styles.container}
+                initial={{x:-40,y:-40 , opacity:0}}
+                animate={{x:0, y:0, opacity:1}}
+                transition={{duration:1.1 , delay:0.3 , ease:easeInOut}}>
         <h3>Movies &gt; {tvShow?.name}</h3>
         <motion.div  className={styles.movie}  key={tvShow?.id}>
                     <div >
@@ -22,6 +25,6 @@ export default function SelectedTvShow({tvShow}) {
                         
                     </div>
         </motion.div>
-    </div>
+    </motion.div>
     )
 }

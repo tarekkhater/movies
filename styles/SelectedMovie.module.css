@@ -23,8 +23,10 @@
 }
 .movie div p{
     font-size:20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1rem;
+    font-weight: 550;
+    color:rgba(255, 0, 64, 0.586);
 }
 .movie div span{
     font-size:18px;
@@ -53,9 +55,7 @@
         font-size:18px;
         margin-bottom:15px;
     }
-    .movie div p{
-        font-size:14px;
-    }
+    
     .movie div span{
         font-size:11px;
     }
@@ -69,7 +69,10 @@
         grid-template-columns: auto;
         justify-content: space-between;
     }
+    .movie div p{
+        font-size:14px;
+    }
     .movie div span{
-        font-size:12px;
+        font-size:11px;
     }
 }
