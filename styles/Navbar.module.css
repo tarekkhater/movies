@@ -1,0 +1,126 @@
+.container{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.096);
+    border-radius: 10px;
+    width:100%;
+    max-width: 100%;
+    padding:0.8rem 2rem;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:auto;
+    color:white;
+}
+    .left{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand{
+        font-weight:bold;
+    }
+
+    .nav div a{
+        padding:8px;
+    }
+
+    .nav a , .collapse a{
+        text-decoration: none;
+        color:rgba(255, 255, 255, 0.808);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav a:hover , .collapse a:hover{
+        color:rgba(187, 54, 54, 0.87);
+    }
+
+    .right {
+        display:flex;
+        justify-content: space-between;
+        justify-items: center;
+        
+    }
+    .right input , .collapse input{
+        background-color: transparent;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.180);
+        padding:1px 9px;
+        color:rgba(255, 255, 255, 0.808);
+    }
+    .image{
+        margin:0px 8px;
+        width:27px;
+        height:27px;
+        border-radius: 50%;
+    }
+  
+    .right button{
+        display: none;
+        padding:0 8px 15px 8px;
+        line-height: 0;
+        font-size: 25px;
+        background-color: transparent;
+        border:1px solid rgb(1, 1, 32);
+        color:darkgray;
+        
+    }
+    .right button p {
+        margin:0;
+        padding:0;
+        height:7px;
+        font-weight: bold;
+        color:darkgray;
+    }
+    .collapse{
+        display:none;
+    }
+    .headers{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+@media screen and (max-width:780px) {
+        .container{
+        padding:0.8rem 2rem 0.8rem 1rem;
+        }
+        .links , .right input, .right img{
+            display:none;
+        }
+        .right button{
+            display:initial;
+            color:darkgray;
+        }
+        .collapse{
+           margin:1rem; 
+           display: flex;
+        }
+        .collapse ul{
+            list-style-type: none;
+            
+        }
+        .collapse ul li{
+            line-height: 3;
+            padding:0;
+        }
+        .collapse ul li input{
+            padding:7px 9px;
+        }
+        .image{
+            margin:0px 8px;
+            width:32px;
+            height:32px;
+        }
+        .search{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+}
+@media screen and (max-width:470px) {
+    .container{
+        padding:0.8rem 2rem 0.8rem 0.5rem;
+    }
+}
